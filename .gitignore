@@ -366,3 +366,23 @@ healthchecksdb
 /RPG Project.sln
 /Assembly-CSharp.csproj
 /Temp
+/Assets/Animations
+/Assets/Editor
+/Assets/Resources
+/Assets/TextMesh Pro
+/Assets/UI
+/Unity.Mathematics.Editor.csproj
+/Unity.Mathematics.csproj
+/Unity.InternalAPIEngineBridge.001.csproj
+/Unity.InternalAPIEditorBridge.001.csproj
+/Unity.2D.Sprite.Editor.csproj
+/Unity.2D.Psdimporter.Editor.csproj
+/Unity.2D.Common.Runtime.csproj
+/Unity.2D.Common.Editor.csproj
+/Unity.2D.Animation.Triangle.Runtime.csproj
+/Unity.2D.Animation.Runtime.csproj
+/Unity.2D.Animation.Editor.csproj
+/PsdPlugin.csproj
+/com.unity.cinemachine.editor.csproj
+/Cinemachine.csproj
+/Assembly-CSharp-Editor.csproj

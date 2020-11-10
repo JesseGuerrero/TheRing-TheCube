@@ -27,8 +27,8 @@ namespace RPG.Movement
         {
             GetComponent<ActionScheduler>().StartAction(this);            
             MoveTo(destination);
-        }
-        
+        }        
+
         public void MoveTo(Vector3 destination)
         {            
             navMeshAgent.destination = destination;
@@ -48,7 +48,7 @@ namespace RPG.Movement
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
 
             //+z becuase thats forward locally
-            float speed = localVelocity.z;
+            float speed = localVelocity.z/5.66f;
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
     }

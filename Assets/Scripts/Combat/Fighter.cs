@@ -12,7 +12,8 @@ namespace RPG.Combat {
         [SerializeField] float weaponDamage = 5f;
 
         Health target;
-        float timeSinceLastAttack = Mathf.Infinity;
+        float timeSinceLastAttack = Mathf.Infinity;                        
+        
 
         private void Update()
         {            
@@ -31,6 +32,8 @@ namespace RPG.Combat {
                 AttackBehavior();
             }
         }
+
+        public Health getCombatTarget() { return target; }
 
         public bool CanAttack(GameObject combatTarget)
         {            
@@ -57,6 +60,7 @@ namespace RPG.Combat {
         //Keyword hit for animation about attacking. The trigger is activated in the middle of the animation, calling this function. The animation trigger is "Hit".
         void Hit()
         {
+            GetComponent<IAudio>().PunchSound();
             if (target == null) return;
             target.TakeDamage(weaponDamage);
         }

@@ -1,26 +1,31 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 namespace RPG.Core
 {
-    public class PlayerAudio : MonoBehaviour
+    public class PlayerAudio : MonoBehaviour, IAudio
     {
-        [SerializeField] AudioClip punchSound;
-        [SerializeField] AudioClip punchSound1;
-        [SerializeField] AudioClip punchSound2;
+        public List<AudioClip> punchSounds;        
+        [SerializeField] AudioClip deathSound;
+
         int punchIndex = 0;
 
         // Start is called before the first frame update
 
         public void PunchSound()
         {
-            punchIndex++;
-            if (punchIndex == 0) transform.GetComponent<AudioSource>().PlayOneShot(punchSound);        
-            if(punchIndex == 2) transform.GetComponent<AudioSource>().PlayOneShot(punchSound1);
-            if (punchIndex == 4)
-            {
-                transform.GetComponent<AudioSource>().PlayOneShot(punchSound2);
-                punchIndex = 0;
-            }
+            int len = punchSounds.Count;
+            int index = Random.Range(0, len * 2);
+            if (len > 0 && index < len) { transform.GetComponent<AudioSource>().PlayOneShot(punchSounds.ElementAt(index)); }
+        }
+
+        public void DeathSound()
+        {
+            transform.GetComponent<AudioSource>().PlayOneShot(deathSound);
+        }
+        public void StartAggroSound()
+        {
 
         }
 
