@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Std_Skin_Head_Pbr
+  m_Shader: {fileID: 4800000, guid: 526231ed22d70c042b4bec774e071cbb, type: 3}
+  m_ValidKeywords:
+  - BOOLEAN_IS_HEAD_ON
+  m_InvalidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - RayTracingPrepass
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _CFULCMask:
+        m_Texture: {fileID: 2800000, guid: 35c257d7546df60488e418e6d1d200bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ColorBlendMap:
+        m_Texture: {fileID: 2800000, guid: 19ee43eacf125764ab0ad20c0b9111ab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseMap:
+        m_Texture: {fileID: 2800000, guid: 9e4e99423614a3243a7eac9fe6202e4d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EarNeckMask:
+        m_Texture: {fileID: 2800000, guid: d6aba6ba045e9654f988a5d96f5959ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MNAOMap:
+        m_Texture: {fileID: 2800000, guid: 65682706e3f1fc641a0b1ca7aed54f8d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: a0d6922e2209bdf49bd9c9540902f10d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MicroNormalMap:
+        m_Texture: {fileID: 2800000, guid: 11282acc400c32145a41fd11cbd0e8a4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalBlendMap:
+        m_Texture: {fileID: 2800000, guid: a8a85d00156ad9c4b9f2474a3018a76b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 6851c7fcc39aa8a44a19c1f11be350dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBAMask:
+        m_Texture: {fileID: 2800000, guid: 44d330face76d3143bb4fe43d5cc724a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SSSMap:
+        m_Texture: {fileID: 2800000, guid: 3d0c18766d9fc8543bd7663976b7c701, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ThicknessMap:
+        m_Texture: {fileID: 2800000, guid: e7f542a779153004bb5058eae3838785, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - BOOLEAN_IS_HEAD: 1
+    - _AOStrength: 1
+    - _AScatterScale: 1
+    - _ASmoothnessMod: 0.053
+    - _BScatterScale: 1
+    - _BSmoothnessMod: 0.12
+    - _CheekScatterScale: 1
+    - _CheekSmoothnessMod: 0
+    - _ChinScatterScale: 1
+    - _ChinSmoothnessMod: 0
+    - _ColorBlendStrength: 0
+    - _EarScatterScale: 1
+    - _EarSmoothnessMod: 0
+    - _ForeheadScatterScale: 1
+    - _ForeheadSmoothnessMod: 0.025
+    - _GScatterScale: 1
+    - _GSmoothnessMod: 0
+    - _LipsCavityAO: 2.5
+    - _MicroNormalStrength: 0.42
+    - _MicroNormalTiling: 25
+    - _MicroSmoothnessMod: -0.02
+    - _MouthCavityAO: 2.5
+    - _NeckScatterScale: 1
+    - _NeckSmoothnessMod: 0
+    - _NormalBlendStrength: 0.5
+    - _NormalStrength: 1
+    - _NostrilCavityAO: 2.5
+    - _RScatterScale: 1
+    - _RSmoothnessMod: 0
+    - _SmoothnessMax: 0.8661538
+    - _SmoothnessMin: 0
+    - _SmoothnessPower: 1.25
+    - _SubsurfaceNormalSoften: 0.65
+    - _SubsurfaceScale: 0.85
+    - _ThicknessScale: 0.4
+    - _TransAmbient: 0.2
+    - _TransDirect: 1
+    - _TransNormalDistortion: 0.95
+    - _TransScattering: 2
+    - _TransShadow: 0.9
+    - _Translucency: 1.5
+    - _UnmaskedScatterScale: 1
+    - _UnmaskedSmoothnessMod: 0
+    - _UpperLipScatterScale: 1
+    - _UpperLipSmoothnessMod: 0
+    - __dirty: 0
+    m_Colors:
+    - _DiffuseColor: {r: 0.99999994, g: 0.99999994, b: 0.99999994, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SubsurfaceFalloff: {r: 1, g: 0.36862746, b: 0.29803917, a: 0}
+  m_BuildTextureStacks: []
